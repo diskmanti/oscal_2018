@@ -17,23 +17,21 @@
 .nobreak {
     white-space: pre;
 }
-
-
 .big-font {
     font-size: 400px;
 }
 
 pre {
-    margin:0;
-    padding:0.2em;
-    background:#fff;
-    color:#000;
-    font-weight:normal;
+    margin: 0;
+    padding: 0.2em;
+    background: #fff;
+    color: #000;
+    font-weight: normal;
 }
 
 pre em {
-    color:#000;
-    background:yellow;
+    color: #000;
+    background: yellow;
 }
 
 .black-text {
@@ -43,3 +41,4 @@ pre em {
 .black-em {
     color: #d13787;
   }
+
