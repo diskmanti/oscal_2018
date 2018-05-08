@@ -1,0 +1,45 @@
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+.blink {
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    -webkit-animation-duration: 800ms;
+}
+
+.nobreak {
+    white-space: pre;
+}
+
+
+.big-font {
+    font-size: 400px;
+}
+
+pre {
+    margin:0;
+    padding:0.2em;
+    background:#fff;
+    color:#000;
+    font-weight:normal;
+}
+
+pre em {
+    color:#000;
+    background:yellow;
+}
+
+.black-text {
+    color: #34383e;
+}
+
+.black-em {
+    color: #d13787;
+  }
