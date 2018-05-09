@@ -8,10 +8,10 @@
 }
 
 .blink {
-    animation-name: blinker;
-    animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
-    animation-duration: 2s;
-    animation-delay: 2s;
+   animation-name: blinker;
+   animation-iteration-count: infinite;
+   animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+   animation-duration: 800ms;
 }
 
 @keyframes emer {
@@ -33,10 +33,6 @@
 
 .nobreak {
     white-space: pre;
-}
-
-.big-font {
-    font-size: 400px;
 }
 
 pre {
@@ -68,9 +64,29 @@ pre em {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 18px;
 }
+
+.two-column {
+    grid-column: 1 / 2;
+}
+
+.column-two {
+    grid-column: 2 / 4;
+}
+
+#first-slide {
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+/* #second-slide{
+    animation-duration: 3s;
+    animation-delay: 5s;
+} */
+
+
 
 
 
