@@ -9,10 +9,9 @@
 
 .blink {
     animation-name: blinker;
-    
     animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
     animation-duration: 2s;
-    animation-delay: 2s;    
+    animation-delay: 2s;
 }
 
 @keyframes emer {
@@ -26,7 +25,7 @@
 
 .eming {
     animation-name: emer;
-    animation-delay: 5s;
+    animation-delay: 7s;
     animation-iteration-count: 1;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -66,3 +65,14 @@ pre em {
     height: 800px;
     z-index: 0;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 18px;
+}
+
+
+
+
+
