@@ -64,16 +64,10 @@ pre em {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 18px;
-}
-
-.two-column {
-    grid-column: 1 / 2;
-}
-
-.column-two {
-    grid-column: 2 / 4;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 120px;
 }
 
 #first-slide {
@@ -81,10 +75,6 @@ pre em {
     animation-delay: 1s;
 }
 
-/* #second-slide{
-    animation-duration: 3s;
-    animation-delay: 5s;
-} */
 
 
 
