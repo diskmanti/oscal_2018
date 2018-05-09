@@ -1,4 +1,4 @@
-@-webkit-keyframes blinker {
+@keyframes blinker {
     from {
         opacity: 1.0;
     }
@@ -8,15 +8,34 @@
 }
 
 .blink {
-    -webkit-animation-name: blinker;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
-    -webkit-animation-duration: 800ms;
+    animation-name: blinker;
+    
+    animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    animation-duration: 2s;
+    animation-delay: 2s;    
+}
+
+@keyframes emer {
+    from {
+        color: white
+    }
+    to {
+        color: #fadb03
+    }
+}
+
+.eming {
+    animation-name: emer;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .nobreak {
     white-space: pre;
 }
+
 .big-font {
     font-size: 400px;
 }
@@ -31,7 +50,7 @@ pre {
 
 pre em {
     color: #000;
-    background: yellow;
+    background: #fadb03
 }
 
 .black-text {
@@ -40,5 +59,10 @@ pre em {
 
 .black-em {
     color: #d13787;
-  }
+}
 
+#map {
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+}
