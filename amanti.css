@@ -8,10 +8,10 @@
 }
 
 .blink {
-   animation-name: blinker;
-   animation-iteration-count: infinite;
-   animation-timing-function: cubic-bezier(1.0,0,0,1.0);
-   animation-duration: 800ms;
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
+    animation-duration: 800ms;
 }
 
 @keyframes emer {
@@ -70,15 +70,28 @@ pre em {
     grid-column-gap: 120px;
 }
 
-#first-slide {
-    animation-duration: 3s;
-    animation-delay: 1s;
+/* h1 a:hover, h1 a:focus {
+	-webkit-filter: hue-rotate(-70deg) saturate(1.5);
+} */
+
+@keyframes changer {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        filter: hue-rotate(-70deg) saturate(1.5);
+    }
 }
 
+.change {
+    animation-name: changer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
 
-
-
-
-
-
-
+.center-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
