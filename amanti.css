@@ -1,4 +1,5 @@
 /* animations */
+
 @keyframes blinker {
     from {
         opacity: 1.0;
@@ -14,6 +15,16 @@
     animation-timing-function: cubic-bezier(1.0, 0, 0, 1.0);
     animation-duration: 800ms;
 }
+
+@keyframes slowBlinker {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 .slowBlink {
     animation-name: slowBlinker;
@@ -41,6 +52,7 @@
 }
 
 /* various */
+
 pre {
     margin: 0;
     padding: 0.2em;
