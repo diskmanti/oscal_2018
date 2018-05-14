@@ -114,7 +114,7 @@
     <div>
         <div style="border: 2px solid red">Container</div>
         <div>
-            <code>var map = map(
+            <code>var map = new <em>L</em>.map(
                 <em>'#divid'</em>
                 ).setView([coords, corrds], zoom)</code>
         </div>
@@ -130,9 +130,17 @@
 
     <div class="center-image" style="background-image: url(img/map_layers.jpg); background-repeat: no-repeat; background-size: cover; width: 1200px; height:900px;"></div>
 
+    <div>
+        <code>var osm = new L.tileLayer(
+            <em>'service-url'</em> );</code>
+    </div>
 
+    <div class="center-image" style="background-image: url(img/controls.jpg); background-image: no-repeat; background-size: cover; width: 1200px; height: 900px;"></div>
 
-
+    <div>
+        <code>var control = new L.controls.layers(
+            <em>'baselayers', 'overlayers'</em> );</code>
+    </div>
 
 
 
