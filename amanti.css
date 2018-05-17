@@ -119,13 +119,15 @@ pre em {
 
 .overlay {
     z-index: 10;
-    grid-column: 1 / 4;
+    grid-column: 2 / 4;
     grid-row: 1;
+    font-size: 144px;
 }
 
 .overlay-2 {
     z-index: 10;
     grid-column: 1 / 4;
     grid-row: 2;
+    font-size: 250px;
 }
 

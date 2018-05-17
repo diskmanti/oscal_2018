@@ -31,7 +31,7 @@ var points = [{
 
 var duration = 3;
 var index = 0;
-Thunderforest_SpinalMap.on('load', function (e) {
+map.on('click', function (e) {
 
     if (first) return;
     first = true;
