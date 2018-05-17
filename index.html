@@ -8,7 +8,6 @@
     <link href='big.css' rel='stylesheet' type='text/css' />
     <link href='highlight.css' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="amanti.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
@@ -27,9 +26,11 @@
     <div>
         <h1>Hello</h1>
         <br>
-        <h3 class="nobreak">Amanti Lulo / I make maps</h3>
+        <h3 class="nobreak">Amanti Lulo / I make maps </h3>
         <br>
         <h3>harta.xyz/oscal_2018</h3>
+        <h3>Project @ </h3>
+        <notes>Talk about self</notes> 
     </div>
 
     <div>
@@ -58,6 +59,7 @@
         <div>
             Made with &#x1F499;, since 2011, by Vladimir Agafonkin / Mapbox
         </div>
+        <notes>Explain a little bit of leaflet history</notes>
     </div>
 
     <div class="grid-container">
@@ -88,14 +90,6 @@
     </div>
 
     <div>
-        <img src="img/duel.gif" style="width: 70%; height: 70%;" class="center-image">
-        <div class="nobreak">It's time to M-M-M-M-M-Map!!</div>
-        <span>
-            <a href="">prjct link</a>
-        </span>
-    </div>
-
-    <div>
         <h3 class="grid-container">
             <em class="one">
                 <span style="opacity: 0;" class="slowBlink">Map</span>
@@ -112,12 +106,20 @@
     </div>
 
     <div>
+        <img src="img/duel.gif" style="width: 70%; height: 70%;" class="center-image">
+        <br>
+        <div class="nobreak">It's time to M-M-M-M-M-Map!!</div>
+    </div>
+
+    <div>
         <div style="border: 2px solid red">Container</div>
         <div>
-            <code>var map = new <em>L</em>.map(
+            <code>var map = new
+                <em>L</em>.map(
                 <em>'#divid'</em>
                 ).setView([coords, corrds], zoom)</code>
         </div>
+        <notes>Explain about how map is rendered and how div functions. Also note the multi div render. Explain the L part.</notes>
     </div>
 
     <div class="center-image">
@@ -126,6 +128,7 @@
             <li>👹</li>
             <li>🗺️</li>
         </ol>
+        <notes>what do these things have in common</notes>
     </div>
 
     <div class="center-image" style="background-image: url(img/map_layers.jpg); background-repeat: no-repeat; background-size: cover; width: 1200px; height:900px;"></div>
@@ -133,6 +136,8 @@
     <div>
         <code>var osm = new L.tileLayer(
             <em>'service-url'</em> );</code>
+
+        <notes>How tilelayers work in leaflet</notes>
     </div>
 
     <div class="center-image" style="background-image: url(img/controls.jpg); background-image: no-repeat; background-size: cover; width: 1200px; height: 900px;"></div>
@@ -142,14 +147,23 @@
             <em>'baselayers', 'overlayers'</em> );</code>
     </div>
 
+    <div>Plugins&#128520; </div>
+
+
 
 
     <div class="grid-map">
+        <div id="map" class="map center-image"></div> 
+        
+        <div class="overlay">Thank You</div>
 
-        <div id="map" class="map center-image"></div>
-        <h4 class="overlay center-image">Amanti</h4>
-
+        <div class="overlay-2">Questions?</div>
     </div>
+
+
+
+
+      
 
 
 
